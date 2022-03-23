@@ -36,15 +36,15 @@
                         $update = $model->update($data);
 
                         if($update){
-                            echo "<script>alert('record update successfully');</script>";
+                            echo "<script>alert('berhasil update');</script>";
                             echo "<script>window.location.href = 'records.php';</script>";
                         }else{
-                            echo "<script>alert('record update failed');</script>";
+                            echo "<script>alert('gagal update');</script>";
                             echo "<script>window.location.href = 'records.php';</script>";
                         }
 
                     }else{
-                    echo "<script>alert('empty');</script>";
+                    echo "<script>alert('kosong');</script>";
                     header("Location: edit.php?id=$id");
                     }
                 }
